@@ -35,7 +35,7 @@ var validKeyFormat = regexp.MustCompile(`^[\w\-\.]+$`)
 var _ Store = &SSMStore{}
 
 // label check regexp
-var labelMatchRegex = regexp.MustCompile(`^(\/[\w\-\.]+)+:(.+)$`)
+var labelMatchRegex = regexp.MustCompile(`^([\w\-\.\/]+)+:(.+)$`)
 
 // SSMStore implements the Store interface for storing secrets in SSM Parameter
 // Store
